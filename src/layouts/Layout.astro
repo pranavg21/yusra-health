@@ -1,0 +1,54 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <!-- Dynamic theme color based on logo brand -->
+    <meta name="theme-color" content="#0C2340" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Yusra Health Company LLC" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+    <style is:global>
+      :root {
+        /* Additional tokens we can override easily */
+      }
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: var(--color-surface);
+      }
+      h1, h2, h3, h4, h5, h6, .font-heading {
+        font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+        letter-spacing: -0.02em;
+      }
+    </style>
+  </head>
+  <body class="text-text-primary overflow-x-hidden relative min-h-screen flex flex-col">
+    <!-- Subtle background dots pattern overlay -->
+    <div class="fixed inset-0 z-[-1] dots-pattern pointer-events-none"></div>
+    <slot />
+  </body>
+</html>

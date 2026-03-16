@@ -1,0 +1,452 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import heroImage from "../assets/hero.png";
+---
+
+<Layout
+  title="Yusra Health Company LLC — Delivering Pharmaceutical Excellence"
+  description="Yusra Health Company LLC is a trusted pharmaceutical distribution company based in Doha, Qatar. We supply quality medicines to pharmacies, hospitals, and healthcare providers across Qatar."
+>
+  <!-- ════════════════════════════════════════════════════════════════════
+       HEADER / NAVBAR (Sticky, Glassmorphism)
+       ════════════════════════════════════════════════════════════════════ -->
+  <header class="absolute top-0 left-0 w-full z-50 animate-fade-down">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-6 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="/logo.png" alt="Yusra Health Logo" class="h-20 md:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8 glass-dark px-8 py-3 rounded-full border border-white/10 shadow-lg">
+        <a href="#about" class="text-sm font-semibold text-white hover:text-teal transition-colors">About Us</a>
+        <a href="#core-values" class="text-sm font-semibold text-white hover:text-teal transition-colors">Core Values</a>
+        <a href="#why-us" class="text-sm font-semibold text-white hover:text-teal transition-colors">Why Choose Us</a>
+        <a href="#contact" class="btn-primary py-2 px-6 min-h-0 text-sm">Partner With Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- ════════════════════════════════════════════════════════════════════
+         SECTION 1 — HERO (Premium Glass Card over Image)
+         ════════════════════════════════════════════════════════════════════ -->
+    <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <!-- Background Image with zoom animation -->
+      <div class="absolute inset-0 w-full h-full">
+        <Image
+          src={heroImage}
+          alt="Pharmaceutical warehouse"
+          class="w-full h-full object-cover origin-center animate-[scale-in_20s_ease-out_infinite_alternate]"
+          style="transform: scale(1.05);"
+          widths={[640, 960, 1280, 1920]}
+          sizes="100vw"
+          format="webp"
+          quality={80}
+          loading="eager"
+        />
+        <!-- Deep Navy Gradient Overlay for premium feel -->
+        <div class="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy/70 to-teal-dark/50 mix-blend-multiply"></div>
+      </div>
+
+      <!-- Floating abstract glow elements -->
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-teal/30 rounded-full blur-[100px] animate-pulse-glow pointer-events-none"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-lime/20 rounded-full blur-[100px] animate-pulse-glow delay-500 pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center text-center mt-12">
+        <!-- Text Content -->
+        <div class="w-full animate-fade-up flex flex-col items-center">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-dark border border-white/20 mb-6 animate-fade-down delay-200">
+            <span class="w-2 h-2 rounded-full bg-lime animate-pulse"></span>
+            <span class="text-xs font-bold text-white tracking-widest uppercase">Qatar's Premier Distributor</span>
+          </div>
+          <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] mb-6 drop-shadow-lg">
+            Delivering <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal to-lime animate-gradient">Excellence</span> <br class="hidden md:block"/>
+            Through Reliable Distribution.
+          </h1>
+          <p class="text-lg md:text-xl text-slate-300 max-w-3xl mb-10 leading-relaxed drop-shadow delay-200 animate-fade-up">
+            Bridging the gap between global pharmaceutical manufacturers and Qatar's healthcare providers with unwavering integrity and precision.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center gap-4 delay-400 animate-fade-up justify-center">
+            <a href="#contact" class="btn-lime w-full sm:w-auto text-lg px-8 py-3 shadow-glow">Partner With Us ➝</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smooth Curve Divider Bottom -->
+      <div class="wave-divider text-surface">
+        <svg viewBox="0 0 1440 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="w-full h-[60px] md:h-[100px]">
+          <path d="M0 120h1440V0c-480 80-960 80-1440 0v120z"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         SECTION 2 — AUTHORITY INTRO
+         ════════════════════════════════════════════════════════════════════ -->
+    <section id="about" class="pt-32 pb-24 md:pt-40 md:pb-32 relative z-10 scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-20 animate-fade-up">
+          <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-navy mb-6">
+            Pioneering Health <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal to-lime">Distributions</span>.
+          </h2>
+          <p class="text-lg text-text-secondary leading-relaxed max-w-4xl mx-auto">
+            Yusra Health Company LLC is a pharmaceutical distribution company based in Doha, Qatar, established in 2026 with the objective of contributing to the country’s growing healthcare sector. The company focuses on importing and distributing high-quality pharmaceutical products from reputable international manufacturers and making them available across the Qatar healthcare market. Yusra Health Company aims to connect global pharmaceutical producers with local healthcare providers, helping ensure that reliable and quality medicines reach pharmacies, hospitals, and clinics efficiently.
+          </p>
+        </div>
+
+        <!-- Compliance Statement (Brand Styled 2-Column Layout) -->
+        <div class="mb-20 animate-fade-up">
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <!-- Left Side Heading -->
+            <div class="flex-1 w-full text-center md:text-left">
+              <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-navy leading-tight">
+                Yusra Health Company<br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal to-lime">Strictly Adheres To:</span>
+              </h2>
+            </div>
+            
+            <!-- Right Side Stacked Items -->
+            <div class="flex-1 w-full flex flex-col gap-4">
+              <!-- Item 1 -->
+              <div class="bg-white rounded-2xl p-4 md:p-5 flex items-center gap-5 border border-teal/10 shadow-sm hover:shadow-md transition-shadow group">
+                <div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center shrink-0 group-hover:bg-teal group-hover:text-white transition-colors text-teal">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                </div>
+                <span class="text-navy font-bold text-lg md:text-xl">Good Storage Practices (GSP)</span>
+              </div>
+              
+              <!-- Item 2 -->
+              <div class="bg-white rounded-2xl p-4 md:p-5 flex items-center gap-5 border border-teal/10 shadow-sm hover:shadow-md transition-shadow group">
+                <div class="w-12 h-12 rounded-full bg-lime-light flex items-center justify-center shrink-0 group-hover:bg-lime group-hover:text-white transition-colors text-lime-dark">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <span class="text-navy font-bold text-lg md:text-xl">Good Distribution Practices (GDP)</span>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="bg-white rounded-2xl p-4 md:p-5 flex items-center gap-5 border border-teal/10 shadow-sm hover:shadow-md transition-shadow group">
+                <div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center shrink-0 group-hover:bg-teal group-hover:text-white transition-colors text-teal">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <span class="text-navy font-bold text-lg md:text-xl">Regulatory Compliance</span>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="bg-white rounded-2xl p-4 md:p-5 flex items-center gap-5 border border-teal/10 shadow-sm hover:shadow-md transition-shadow group">
+                <div class="w-12 h-12 rounded-full bg-lime-light flex items-center justify-center shrink-0 group-hover:bg-lime group-hover:text-white transition-colors text-lime-dark">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                </div>
+                <span class="text-navy font-bold text-lg md:text-xl">Quality Assurance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Removed Previous Vision & Mission Grid as requested -->
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         SECTION 3 — VALUE PROPOSITION GRID (Core Values)
+         ════════════════════════════════════════════════════════════════════ -->
+    <section id="core-values" class="pt-32 pb-32 md:pt-40 md:pb-40 bg-navy relative overflow-hidden text-white scroll-mt-20">
+      <!-- Decorative Elements -->
+      <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-teal/10 to-transparent rounded-full blur-[100px] pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="text-center mb-24 animate-fade-up">
+          <h2 class="font-heading text-4xl md:text-5xl font-extrabold mb-12"><span class="text-transparent bg-clip-text bg-gradient-to-r from-lime to-teal">Core Values</span></h2>
+          
+          <h3 class="text-2xl md:text-4xl font-bold text-white mb-20">We Are Majorly Focused On</h3>
+
+          <div class="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-32">
+            <!-- Integrity -->
+            <div class="flex flex-col items-center group">
+              <div class="w-24 h-24 rounded-full border-2 border-[#1ea1d4] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_20px_rgba(30,161,212,0.15)] bg-slate-800/50 backdrop-blur-sm">
+                <svg class="w-10 h-10 text-[#1ea1d4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12h4l3-9 5 18 3-9h4"></path></svg>
+              </div>
+              <span class="text-white font-bold tracking-wider uppercase text-lg">INTEGRITY</span>
+            </div>
+
+            <!-- Efficiency -->
+            <div class="flex flex-col items-center group">
+              <div class="w-24 h-24 rounded-full border-2 border-[#1ea1d4] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_20px_rgba(30,161,212,0.15)] bg-slate-800/50 backdrop-blur-sm">
+                <svg class="w-10 h-10 text-[#1ea1d4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+              </div>
+              <span class="text-white font-bold tracking-wider uppercase text-lg">EFFICIENCY</span>
+            </div>
+
+            <!-- Affordability -->
+            <div class="flex flex-col items-center group">
+              <div class="w-24 h-24 rounded-full border-2 border-[#1ea1d4] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_20px_rgba(30,161,212,0.15)] bg-slate-800/50 backdrop-blur-sm">
+                <svg class="w-10 h-10 text-[#1ea1d4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+              </div>
+              <span class="text-white font-bold tracking-wider uppercase text-lg">AFFORDABILITY</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+          <!-- Vision Card -->
+          <div class="glass-dark rounded-3xl p-10 border border-white/10 hover:border-teal/50 transition-colors duration-300 group">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal/20 to-teal/5 flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform duration-300">🔭</div>
+            <h3 class="font-heading text-2xl font-bold mb-6 text-teal">Vision</h3>
+            <p class="text-slate-300 leading-relaxed text-lg">
+              To empower Qatar's healthcare system by ensuring reliable access to quality pharmaceutical products, building strong partnerships with global manufacturers, strengthening the healthcare supply chain, and consistently working to become a leading pharmaceutical distributor in Qatar.
+            </p>
+          </div>
+
+          <!-- Mission Card -->
+          <div class="glass-dark rounded-3xl p-10 border border-white/10 hover:border-lime/50 transition-colors duration-300 group">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-lime/20 to-lime/5 flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform duration-300">🎯</div>
+            <h3 class="font-heading text-2xl font-bold mb-6 text-lime">Our Mission</h3>
+            <p class="text-slate-300 leading-relaxed text-lg">
+              Is to deliver reliable pharmaceutical distribution solutions that meet the needs of Qatar's growing healthcare market. By partnering with reputable international manufacturers, while maintaining the highest standards of reliability, safety, and regulatory compliance. Optimizing supply chain efficiency, and maintaining the highest standards of quality and safety, we aim to create long-term value for our principals, healthcare partners, customers, and consumers.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- Wave Divider Top and Bottom -->
+      <div class="wave-divider-top text-surface">
+        <svg viewBox="0 0 1440 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0L60 15C120 30 240 60 360 67.5C480 75 600 60 720 52.5C840 45 960 45 1080 37.5C1200 30 1320 15 1380 7.5H1440V120H0Z"/>
+        </svg>
+      </div>
+
+      <!-- Bottom Curve to Transition to Why Us -->
+      <div class="wave-divider text-teal-50">
+        <svg viewBox="0 0 1440 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="w-full h-[60px] md:h-[100px]">
+          <path d="M0 120h1440V0c-480 80-960 80-1440 0v120z"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         SECTION 3.5 — WHY CHOOSE US
+         ════════════════════════════════════════════════════════════════════ -->
+    <section id="why-us" class="py-24 md:py-32 bg-teal-50 relative z-10 scroll-mt-20 border-b border-teal/10">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16 animate-fade-up">
+          <h2 class="font-heading text-4xl md:text-5xl font-extrabold mb-6 text-navy">Why <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal to-lime">Choose Us?</span></h2>
+          <p class="text-lg text-text-secondary max-w-2xl mx-auto">Discover the unique advantages of partnering with a focused and dedicated distributor in Qatar.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+          <!-- Card A - Partnership Model -->
+          <div class="bg-white rounded-3xl p-8 md:p-10 border border-teal/10 hover:border-teal/30 hover:-translate-y-2 hover:shadow-card-hover transition-all duration-300 group shadow-card">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal flex items-center justify-center group-hover:bg-teal group-hover:text-white transition-all duration-300 shrink-0">
+                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+              </div>
+              <h4 class="font-heading text-xl md:text-2xl font-bold text-navy leading-tight">A Focused Partnership Model <span class="block text-sm font-normal text-teal mt-1">(Not a Mass Distributor)</span></h4>
+            </div>
+            <ul class="text-text-secondary space-y-3">
+              <li class="flex items-start gap-2"><span class="text-lime font-bold mt-1">✓</span> Dedicated attention to each product portfolio</li>
+              <li class="flex items-start gap-2"><span class="text-lime font-bold mt-1">✓</span> Stronger market development efforts</li>
+              <li class="flex items-start gap-2"><span class="text-lime font-bold mt-1">✓</span> Better positioning in hospitals and pharmacy chains</li>
+            </ul>
+          </div>
+
+          <!-- Card B - Market Entry -->
+          <div class="bg-white rounded-3xl p-8 md:p-10 border border-teal/10 hover:border-lime/30 hover:-translate-y-2 hover:shadow-card-hover transition-all duration-300 group shadow-card">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-lime-light text-lime-dark flex items-center justify-center group-hover:bg-lime group-hover:text-white transition-all duration-300 shrink-0">
+                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+              </div>
+              <h4 class="font-heading text-xl md:text-2xl font-bold text-navy leading-tight">Strategic Market Entry Support</h4>
+            </div>
+            <ul class="text-text-secondary space-y-3">
+              <li class="flex items-start gap-2"><span class="text-teal font-bold mt-1">✓</span> Regulatory procedures</li>
+              <li class="flex items-start gap-2"><span class="text-teal font-bold mt-1">✓</span> Product registration</li>
+              <li class="flex items-start gap-2"><span class="text-teal font-bold mt-1">✓</span> Market positioning</li>
+            </ul>
+          </div>
+
+          <!-- Card C - Market Development -->
+          <div class="bg-white rounded-3xl p-8 md:p-10 border border-teal/10 hover:border-teal/30 hover:-translate-y-2 hover:shadow-card-hover transition-all duration-300 group shadow-card">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal flex items-center justify-center group-hover:bg-teal group-hover:text-white transition-all duration-300 shrink-0">
+                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+              </div>
+              <h4 class="font-heading text-xl md:text-2xl font-bold text-navy leading-tight">Dedicated Market Development</h4>
+            </div>
+            <ul class="text-text-secondary space-y-3">
+              <li class="flex items-start gap-2"><span class="text-lime font-bold mt-1">✓</span> Establishing connections with leading pharmacy chains</li>
+              <li class="flex items-start gap-2"><span class="text-lime font-bold mt-1">✓</span> Supporting product visibility in the local market</li>
+            </ul>
+          </div>
+
+          <!-- Card D - Industry Adv -->
+          <div class="bg-white rounded-3xl p-8 md:p-10 border border-teal/10 hover:border-lime/30 hover:-translate-y-2 hover:shadow-card-hover transition-all duration-300 group shadow-card">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-lime-light text-lime-dark flex items-center justify-center group-hover:bg-lime group-hover:text-white transition-all duration-300 shrink-0">
+                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+              </div>
+              <h4 class="font-heading text-xl md:text-2xl font-bold text-navy leading-tight">Strong Industry Advisory Expertise</h4>
+            </div>
+            <ul class="text-text-secondary space-y-3">
+              <li class="flex items-start gap-2"><span class="text-teal font-bold mt-1">✓</span> Deep understanding of pharmaceutical marketing</li>
+              <li class="flex items-start gap-2"><span class="text-teal font-bold mt-1">✓</span> Knowledge of product positioning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════════════════
+         SECTION 4 — B2B LEAD CAPTURE FORM
+         ════════════════════════════════════════════════════════════════════ -->
+    <section id="contact" class="pt-32 pb-24 md:pt-40 md:pb-32 relative scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
+        
+        <!-- Form Info -->
+        <div class="flex-1 text-center lg:text-left animate-fade-up">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-50 text-teal-dark font-bold text-sm mb-6 shadow-sm border border-teal/10">
+            <span class="w-2 h-2 rounded-full bg-teal animate-pulse"></span>
+            Accepting New Partners
+          </div>
+          <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-navy mb-6">
+            Let's Enter The <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal to-lime">Qatari Market</span> Together.
+          </h2>
+          <p class="text-lg text-text-secondary mb-8">
+            Partner with Yusra Health Company to expand your global footprint. Let us handle the complexities of Middle-Eastern distribution while you focus on manufacturing excellence.
+          </p>
+          
+        </div>
+
+        <!-- Direct Contact Details Card replacing Form -->
+        <div class="flex-1 w-full max-w-lg mx-auto lg:my-0 lg:max-w-xl animate-fade-up delay-200">
+          <div class="gradient-border p-1">
+            <div class="bg-white rounded-[1.25rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
+              <img src="/logo.png" alt="" class="absolute bg-white top-8 right-8 w-32 md:w-48 opacity-[0.05] pointer-events-none" />
+              
+              <h3 class="font-heading text-3xl md:text-4xl font-bold text-navy mb-8 border-b border-teal/10 pb-6 inline-block w-full text-center lg:text-left">Contact Us</h3>
+              
+              <div class="space-y-8 mt-6">
+                <!-- Emails -->
+                <div class="flex flex-col lg:flex-row items-center lg:items-start gap-5">
+                  <div class="w-14 h-14 rounded-2xl bg-teal-50 flex items-center justify-center shrink-0 border border-teal/10 shadow-inner group transition-transform hover:scale-105">
+                     <svg class="w-7 h-7 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                  </div>
+                  <div class="text-center lg:text-left">
+                    <p class="font-heading text-xs font-bold uppercase tracking-widest text-text-secondary mb-2">Direct Mail</p>
+                    <a href="mailto:info@yhcqatar.com" class="font-heading block text-xl md:text-2xl font-bold text-navy hover:text-teal transition-colors mb-1">info@yhcqatar.com</a>
+                    <a href="mailto:contact@yhcqatar.com" class="font-heading block text-xl md:text-2xl font-bold text-navy hover:text-lime transition-colors">contact@yhcqatar.com</a>
+                  </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="h-px w-full bg-gradient-to-r from-transparent via-border-subtle to-transparent"></div>
+
+                <!-- Address -->
+                <div class="flex flex-col lg:flex-row items-center lg:items-start gap-5">
+                  <div class="w-14 h-14 rounded-2xl bg-lime-light flex items-center justify-center shrink-0 border border-lime/10 shadow-inner group transition-transform hover:scale-105">
+                     <svg class="w-7 h-7 text-lime-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  </div>
+                  <div class="text-center lg:text-left">
+                    <p class="font-heading text-xs font-bold uppercase tracking-widest text-text-secondary mb-2">Office Headquarters</p>
+                    <p class="font-heading text-xl md:text-2xl font-bold text-navy">Doha, Qatar</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Action Button -->
+              <div class="mt-12 text-center lg:text-left">
+                 <a href="mailto:info@yhcqatar.com" class="btn-primary w-full shadow-glow text-lg py-4 inline-block text-center rounded-xl bg-gradient-to-r from-teal to-lime hover:opacity-90 transition-opacity">
+                    Reach Out Today <span class="ml-2">→</span>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       SECTION 5 — CORPORATE FOOTER
+       ════════════════════════════════════════════════════════════════════ -->
+  <footer class="bg-navy text-slate-300 border-t border-teal/20 pt-16 pb-8 relative overflow-hidden">
+    <!-- Background logo watermark -->
+    <img src="/logo.png" alt="" class="absolute bottom-0 left-0 w-96 filter brightness-0 invert opacity-[0.03] transform -translate-x-1/4 translate-y-1/4" />
+    
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+        <!-- Branding -->
+        <div class="md:col-span-5">
+          <div class="bg-white inline-block p-6 rounded-xl mb-6 shadow-glow">
+            <img src="/logo.png" alt="Yusra Health Logo" class="h-20 lg:h-24 w-auto object-contain" />
+          </div>
+          <p class="text-teal text-sm font-bold uppercase tracking-widest mb-4">Empowering Qatar's Health</p>
+          <p class="text-slate-400 leading-relaxed max-w-sm">
+            Bridging the gap between global pharmaceutical innovation and Qatar's healthcare infrastructure with uncompromising quality standards.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="md:col-span-3">
+          <h4 class="font-heading text-lg font-bold text-white mb-6">Navigation</h4>
+          <ul class="space-y-4">
+            <li><a href="#hero" class="hover:text-teal transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-teal transition-colors">About Us</a></li>
+            <li><a href="#why-us" class="hover:text-teal transition-colors">Why Choose Us</a></li>
+            <li><a href="#contact" class="hover:text-teal transition-colors">Partner With Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Map -->
+        <div class="md:col-span-4">
+          <h4 class="font-heading text-lg font-bold text-white mb-6">Headquarters</h4>
+          <address class="not-italic text-sm space-y-3 mb-6">
+            <p class="flex items-center gap-3"><span class="text-lime">📍</span> Office - Doha, Qatar</p>
+            <p><a href="mailto:info@yhcqatar.com" class="flex items-center gap-3 hover:text-teal transition-colors"><span class="text-lime">✉️</span> info@yhcqatar.com</a></p>
+            <p><a href="mailto:contact@yhcqatar.com" class="flex items-center gap-3 hover:text-teal transition-colors"><span class="text-lime">✉️</span> contact@yhcqatar.com</a></p>
+          </address>
+          <div class="rounded-xl overflow-hidden border border-white/10 shadow-lg h-32 relative group">
+            <div class="absolute inset-0 bg-teal/20 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
+            <iframe
+              title="Yusra Health Company location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115548.65498568791!2d51.43878!3d25.28545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x1cfa88cf2e0aa2a3!2sDoha%2C%20Qatar!5e0!3m2!1sen!2s!4v1710000000000"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-slate-500">
+        <p>&copy; 2026 Yusra Health Company LLC. All rights reserved.</p>
+        <p class="mt-2 md:mt-0">Doha, Qatar</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       SECTION 6 — STICKY MOBILE NAV (Glassmorphism)
+       ════════════════════════════════════════════════════════════════════ -->
+  <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 glass-dark border-t border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.3)] touch-none">
+    <div class="flex items-center justify-around px-2 py-3 pb-safe">
+      <a href="tel:+97400000000" class="flex flex-col items-center gap-1 text-white hover:text-teal transition-colors p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="text-[10px] font-semibold">Call</span>
+      </a>
+      <div class="w-px h-8 bg-white/20"></div>
+      <a href="https://wa.me/97400000000" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-1 text-lime hover:text-white transition-colors p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="text-[10px] font-semibold">WhatsApp</span>
+      </a>
+      <div class="w-px h-8 bg-white/20"></div>
+      <a href="#contact" class="flex flex-col items-center gap-1 text-white hover:text-teal transition-colors p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span class="text-[10px] font-semibold">Email</span>
+      </a>
+    </div>
+  </nav>
+  
+  <!-- Content shim for mobile footer -->
+  <div class="h-24 md:hidden" aria-hidden="true"></div>
+</Layout>
