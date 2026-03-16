@@ -8,9 +8,6 @@ import heroImage from "../assets/hero.png";
   title="Yusra Health Company LLC — Delivering Pharmaceutical Excellence"
   description="Yusra Health Company LLC is a trusted pharmaceutical distribution company based in Doha, Qatar. We supply quality medicines to pharmacies, hospitals, and healthcare providers across Qatar."
 >
-  <!-- ════════════════════════════════════════════════════════════════════
-       HEADER / NAVBAR (Sticky, Glassmorphism)
-       ════════════════════════════════════════════════════════════════════ -->
   <header class="absolute top-0 left-0 w-full z-50 animate-fade-down">
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-6 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3 group">
@@ -27,11 +24,7 @@ import heroImage from "../assets/hero.png";
   </header>
 
   <main class="flex-grow">
-    <!-- ════════════════════════════════════════════════════════════════════
-         SECTION 1 — HERO (Premium Glass Card over Image)
-         ════════════════════════════════════════════════════════════════════ -->
     <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      <!-- Background Image with zoom animation -->
       <div class="absolute inset-0 w-full h-full">
         <Image
           src={heroImage}
@@ -44,16 +37,13 @@ import heroImage from "../assets/hero.png";
           quality={80}
           loading="eager"
         />
-        <!-- Deep Navy Gradient Overlay for premium feel -->
         <div class="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy/70 to-teal-dark/50 mix-blend-multiply"></div>
       </div>
 
-      <!-- Floating abstract glow elements -->
       <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-teal/30 rounded-full blur-[100px] animate-pulse-glow pointer-events-none"></div>
       <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-lime/20 rounded-full blur-[100px] animate-pulse-glow delay-500 pointer-events-none"></div>
 
       <div class="relative z-10 max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center text-center mt-12">
-        <!-- Text Content -->
         <div class="w-full animate-fade-up flex flex-col items-center">
           <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-dark border border-white/20 mb-6 animate-fade-down delay-200">
             <span class="w-2 h-2 rounded-full bg-lime animate-pulse"></span>
@@ -72,7 +62,6 @@ import heroImage from "../assets/hero.png";
         </div>
       </div>
 
-      <!-- Smooth Curve Divider Bottom -->
       <div class="wave-divider text-surface">
         <svg viewBox="0 0 1440 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="w-full h-[60px] md:h-[100px]">
           <path d="M0 120h1440V0c-480 80-960 80-1440 0v120z"/>
@@ -80,33 +69,26 @@ import heroImage from "../assets/hero.png";
       </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════════════════════════
-         SECTION 2 — AUTHORITY INTRO
-         ════════════════════════════════════════════════════════════════════ -->
     <section id="about" class="pt-32 pb-24 md:pt-40 md:pb-32 relative z-10 scroll-mt-20">
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto mb-20 animate-fade-up">
           <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-navy mb-6">
             Pioneering Health <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal to-lime">Distributions</span>.
           </h2>
-          <p class="text-lg text-text-secondary leading-relaxed max-w-4xl mx-auto">
+          <p class="text-lg text-slate-600 leading-relaxed max-w-4xl mx-auto">
             Yusra Health Company LLC is a pharmaceutical distribution company based in Doha, Qatar, established in 2026 with the objective of contributing to the country’s growing healthcare sector. The company focuses on importing and distributing high-quality pharmaceutical products from reputable international manufacturers and making them available across the Qatar healthcare market. Yusra Health Company aims to connect global pharmaceutical producers with local healthcare providers, helping ensure that reliable and quality medicines reach pharmacies, hospitals, and clinics efficiently.
           </p>
         </div>
 
-        <!-- Compliance Statement (Brand Styled 2-Column Layout) -->
         <div class="mb-20 animate-fade-up">
           <div class="flex flex-col md:flex-row items-center gap-12">
-            <!-- Left Side Heading -->
             <div class="flex-1 w-full text-center md:text-left">
               <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-navy leading-tight">
                 Yusra Health Company<br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal to-lime">Strictly Adheres To:</span>
               </h2>
             </div>
             
-            <!-- Right Side Stacked Items -->
             <div class="flex-1 w-full flex flex-col gap-4">
-              <!-- Item 1 -->
               <div class="bg-white rounded-2xl p-4 md:p-5 flex items-center gap-5 border border-teal/10 shadow-sm hover:shadow-md transition-shadow group">
                 <div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center shrink-0 group-hover:bg-teal group-hover:text-white transition-colors text-teal">
                   <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
@@ -114,7 +96,6 @@ import heroImage from "../assets/hero.png";
                 <span class="text-navy font-bold text-lg md:text-xl">Good Storage Practices (GSP)</span>
               </div>
               
-              <!-- Item 2 -->
               <div class="bg-white rounded-2xl p-4 md:p-5 flex items-center gap-5 border border-teal/10 shadow-sm hover:shadow-md transition-shadow group">
                 <div class="w-12 h-12 rounded-full bg-lime-light flex items-center justify-center shrink-0 group-hover:bg-lime group-hover:text-white transition-colors text-lime-dark">
                   <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -122,7 +103,6 @@ import heroImage from "../assets/hero.png";
                 <span class="text-navy font-bold text-lg md:text-xl">Good Distribution Practices (GDP)</span>
               </div>
 
-              <!-- Item 3 -->
               <div class="bg-white rounded-2xl p-4 md:p-5 flex items-center gap-5 border border-teal/10 shadow-sm hover:shadow-md transition-shadow group">
                 <div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center shrink-0 group-hover:bg-teal group-hover:text-white transition-colors text-teal">
                   <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
@@ -130,7 +110,6 @@ import heroImage from "../assets/hero.png";
                 <span class="text-navy font-bold text-lg md:text-xl">Regulatory Compliance</span>
               </div>
 
-              <!-- Item 4 -->
               <div class="bg-white rounded-2xl p-4 md:p-5 flex items-center gap-5 border border-teal/10 shadow-sm hover:shadow-md transition-shadow group">
                 <div class="w-12 h-12 rounded-full bg-lime-light flex items-center justify-center shrink-0 group-hover:bg-lime group-hover:text-white transition-colors text-lime-dark">
                   <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
@@ -141,15 +120,10 @@ import heroImage from "../assets/hero.png";
           </div>
         </div>
 
-        <!-- Removed Previous Vision & Mission Grid as requested -->
-      </div>
+        </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════════════════════════
-         SECTION 3 — VALUE PROPOSITION GRID (Core Values)
-         ════════════════════════════════════════════════════════════════════ -->
     <section id="core-values" class="pt-32 pb-32 md:pt-40 md:pb-40 bg-navy relative overflow-hidden text-white scroll-mt-20">
-      <!-- Decorative Elements -->
       <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-teal/10 to-transparent rounded-full blur-[100px] pointer-events-none"></div>
       
       <div class="max-w-7xl mx-auto px-4 relative z-10">
@@ -159,7 +133,6 @@ import heroImage from "../assets/hero.png";
           <h3 class="text-2xl md:text-4xl font-bold text-white mb-20">We Are Majorly Focused On</h3>
 
           <div class="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-32">
-            <!-- Integrity -->
             <div class="flex flex-col items-center group">
               <div class="w-24 h-24 rounded-full border-2 border-[#1ea1d4] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_20px_rgba(30,161,212,0.15)] bg-slate-800/50 backdrop-blur-sm">
                 <svg class="w-10 h-10 text-[#1ea1d4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12h4l3-9 5 18 3-9h4"></path></svg>
@@ -167,7 +140,6 @@ import heroImage from "../assets/hero.png";
               <span class="text-white font-bold tracking-wider uppercase text-lg">INTEGRITY</span>
             </div>
 
-            <!-- Efficiency -->
             <div class="flex flex-col items-center group">
               <div class="w-24 h-24 rounded-full border-2 border-[#1ea1d4] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_20px_rgba(30,161,212,0.15)] bg-slate-800/50 backdrop-blur-sm">
                 <svg class="w-10 h-10 text-[#1ea1d4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
@@ -175,7 +147,6 @@ import heroImage from "../assets/hero.png";
               <span class="text-white font-bold tracking-wider uppercase text-lg">EFFICIENCY</span>
             </div>
 
-            <!-- Affordability -->
             <div class="flex flex-col items-center group">
               <div class="w-24 h-24 rounded-full border-2 border-[#1ea1d4] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_20px_rgba(30,161,212,0.15)] bg-slate-800/50 backdrop-blur-sm">
                 <svg class="w-10 h-10 text-[#1ea1d4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
@@ -186,20 +157,18 @@ import heroImage from "../assets/hero.png";
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-          <!-- Vision Card -->
           <div class="glass-dark rounded-3xl p-10 border border-white/10 hover:border-teal/50 transition-colors duration-300 group">
             <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal/20 to-teal/5 flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform duration-300">🔭</div>
             <h3 class="font-heading text-2xl font-bold mb-6 text-teal">Vision</h3>
-            <p class="text-slate-300 leading-relaxed text-lg">
+            <p class="text-white leading-relaxed text-lg">
               To empower Qatar's healthcare system by ensuring reliable access to quality pharmaceutical products, building strong partnerships with global manufacturers, strengthening the healthcare supply chain, and consistently working to become a leading pharmaceutical distributor in Qatar.
             </p>
           </div>
 
-          <!-- Mission Card -->
           <div class="glass-dark rounded-3xl p-10 border border-white/10 hover:border-lime/50 transition-colors duration-300 group">
             <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-lime/20 to-lime/5 flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform duration-300">🎯</div>
             <h3 class="font-heading text-2xl font-bold mb-6 text-lime">Our Mission</h3>
-            <p class="text-slate-300 leading-relaxed text-lg">
+            <p class="text-white leading-relaxed text-lg">
               Is to deliver reliable pharmaceutical distribution solutions that meet the needs of Qatar's growing healthcare market. By partnering with reputable international manufacturers, while maintaining the highest standards of reliability, safety, and regulatory compliance. Optimizing supply chain efficiency, and maintaining the highest standards of quality and safety, we aim to create long-term value for our principals, healthcare partners, customers, and consumers.
             </p>
           </div>
@@ -207,14 +176,12 @@ import heroImage from "../assets/hero.png";
 
       </div>
       
-      <!-- Wave Divider Top and Bottom -->
       <div class="wave-divider-top text-surface">
         <svg viewBox="0 0 1440 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0L60 15C120 30 240 60 360 67.5C480 75 600 60 720 52.5C840 45 960 45 1080 37.5C1200 30 1320 15 1380 7.5H1440V120H0Z"/>
         </svg>
       </div>
 
-      <!-- Bottom Curve to Transition to Why Us -->
       <div class="wave-divider text-teal-50">
         <svg viewBox="0 0 1440 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="w-full h-[60px] md:h-[100px]">
           <path d="M0 120h1440V0c-480 80-960 80-1440 0v120z"/>
@@ -222,18 +189,14 @@ import heroImage from "../assets/hero.png";
       </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════════════════════════
-         SECTION 3.5 — WHY CHOOSE US
-         ════════════════════════════════════════════════════════════════════ -->
     <section id="why-us" class="py-24 md:py-32 bg-teal-50 relative z-10 scroll-mt-20 border-b border-teal/10">
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-16 animate-fade-up">
           <h2 class="font-heading text-4xl md:text-5xl font-extrabold mb-6 text-navy">Why <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal to-lime">Choose Us?</span></h2>
-          <p class="text-lg text-text-secondary max-w-2xl mx-auto">Discover the unique advantages of partnering with a focused and dedicated distributor in Qatar.</p>
+          <p class="text-lg text-slate-600 max-w-2xl mx-auto">Discover the unique advantages of partnering with a focused and dedicated distributor in Qatar.</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-          <!-- Card A - Partnership Model -->
           <div class="bg-white rounded-3xl p-8 md:p-10 border border-teal/10 hover:border-teal/30 hover:-translate-y-2 hover:shadow-card-hover transition-all duration-300 group shadow-card">
             <div class="flex items-center gap-4 mb-6">
               <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal flex items-center justify-center group-hover:bg-teal group-hover:text-white transition-all duration-300 shrink-0">
@@ -241,14 +204,13 @@ import heroImage from "../assets/hero.png";
               </div>
               <h4 class="font-heading text-xl md:text-2xl font-bold text-navy leading-tight">A Focused Partnership Model <span class="block text-sm font-normal text-teal mt-1">(Not a Mass Distributor)</span></h4>
             </div>
-            <ul class="text-text-secondary space-y-3">
+            <ul class="text-slate-600 space-y-3">
               <li class="flex items-start gap-2"><span class="text-lime font-bold mt-1">✓</span> Dedicated attention to each product portfolio</li>
               <li class="flex items-start gap-2"><span class="text-lime font-bold mt-1">✓</span> Stronger market development efforts</li>
               <li class="flex items-start gap-2"><span class="text-lime font-bold mt-1">✓</span> Better positioning in hospitals and pharmacy chains</li>
             </ul>
           </div>
 
-          <!-- Card B - Market Entry -->
           <div class="bg-white rounded-3xl p-8 md:p-10 border border-teal/10 hover:border-lime/30 hover:-translate-y-2 hover:shadow-card-hover transition-all duration-300 group shadow-card">
             <div class="flex items-center gap-4 mb-6">
               <div class="w-12 h-12 rounded-xl bg-lime-light text-lime-dark flex items-center justify-center group-hover:bg-lime group-hover:text-white transition-all duration-300 shrink-0">
@@ -256,14 +218,13 @@ import heroImage from "../assets/hero.png";
               </div>
               <h4 class="font-heading text-xl md:text-2xl font-bold text-navy leading-tight">Strategic Market Entry Support</h4>
             </div>
-            <ul class="text-text-secondary space-y-3">
+            <ul class="text-slate-600 space-y-3">
               <li class="flex items-start gap-2"><span class="text-teal font-bold mt-1">✓</span> Regulatory procedures</li>
               <li class="flex items-start gap-2"><span class="text-teal font-bold mt-1">✓</span> Product registration</li>
               <li class="flex items-start gap-2"><span class="text-teal font-bold mt-1">✓</span> Market positioning</li>
             </ul>
           </div>
 
-          <!-- Card C - Market Development -->
           <div class="bg-white rounded-3xl p-8 md:p-10 border border-teal/10 hover:border-teal/30 hover:-translate-y-2 hover:shadow-card-hover transition-all duration-300 group shadow-card">
             <div class="flex items-center gap-4 mb-6">
               <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal flex items-center justify-center group-hover:bg-teal group-hover:text-white transition-all duration-300 shrink-0">
@@ -271,13 +232,12 @@ import heroImage from "../assets/hero.png";
               </div>
               <h4 class="font-heading text-xl md:text-2xl font-bold text-navy leading-tight">Dedicated Market Development</h4>
             </div>
-            <ul class="text-text-secondary space-y-3">
+            <ul class="text-slate-600 space-y-3">
               <li class="flex items-start gap-2"><span class="text-lime font-bold mt-1">✓</span> Establishing connections with leading pharmacy chains</li>
               <li class="flex items-start gap-2"><span class="text-lime font-bold mt-1">✓</span> Supporting product visibility in the local market</li>
             </ul>
           </div>
 
-          <!-- Card D - Industry Adv -->
           <div class="bg-white rounded-3xl p-8 md:p-10 border border-teal/10 hover:border-lime/30 hover:-translate-y-2 hover:shadow-card-hover transition-all duration-300 group shadow-card">
             <div class="flex items-center gap-4 mb-6">
               <div class="w-12 h-12 rounded-xl bg-lime-light text-lime-dark flex items-center justify-center group-hover:bg-lime group-hover:text-white transition-all duration-300 shrink-0">
@@ -285,7 +245,7 @@ import heroImage from "../assets/hero.png";
               </div>
               <h4 class="font-heading text-xl md:text-2xl font-bold text-navy leading-tight">Strong Industry Advisory Expertise</h4>
             </div>
-            <ul class="text-text-secondary space-y-3">
+            <ul class="text-slate-600 space-y-3">
               <li class="flex items-start gap-2"><span class="text-teal font-bold mt-1">✓</span> Deep understanding of pharmaceutical marketing</li>
               <li class="flex items-start gap-2"><span class="text-teal font-bold mt-1">✓</span> Knowledge of product positioning</li>
             </ul>
@@ -294,13 +254,9 @@ import heroImage from "../assets/hero.png";
       </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════════════════════════
-         SECTION 4 — B2B LEAD CAPTURE FORM
-         ════════════════════════════════════════════════════════════════════ -->
     <section id="contact" class="pt-32 pb-24 md:pt-40 md:pb-32 relative scroll-mt-20">
       <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
         
-        <!-- Form Info -->
         <div class="flex-1 text-center lg:text-left animate-fade-up">
           <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-50 text-teal-dark font-bold text-sm mb-6 shadow-sm border border-teal/10">
             <span class="w-2 h-2 rounded-full bg-teal animate-pulse"></span>
@@ -309,52 +265,47 @@ import heroImage from "../assets/hero.png";
           <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-navy mb-6">
             Let's Enter The <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal to-lime">Qatari Market</span> Together.
           </h2>
-          <p class="text-lg text-text-secondary mb-8">
+          <p class="text-lg text-slate-600 mb-8">
             Partner with Yusra Health Company to expand your global footprint. Let us handle the complexities of Middle-Eastern distribution while you focus on manufacturing excellence.
           </p>
           
         </div>
 
-        <!-- Direct Contact Details Card replacing Form -->
         <div class="flex-1 w-full max-w-lg mx-auto lg:my-0 lg:max-w-xl animate-fade-up delay-200">
           <div class="gradient-border p-1">
             <div class="bg-white rounded-[1.25rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
-              <img src="/logo.png" alt="" class="absolute bg-white top-8 right-8 w-32 md:w-48 opacity-[0.05] pointer-events-none" />
+              <img src="/logo.png" alt="" class="absolute bottom-8 right-8 h-32 md:h-48 w-auto object-contain opacity-[0.05] pointer-events-none" />
               
               <h3 class="font-heading text-3xl md:text-4xl font-bold text-navy mb-8 border-b border-teal/10 pb-6 inline-block w-full text-center lg:text-left">Contact Us</h3>
               
               <div class="space-y-8 mt-6">
-                <!-- Emails -->
                 <div class="flex flex-col lg:flex-row items-center lg:items-start gap-5">
                   <div class="w-14 h-14 rounded-2xl bg-teal-50 flex items-center justify-center shrink-0 border border-teal/10 shadow-inner group transition-transform hover:scale-105">
                      <svg class="w-7 h-7 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                   </div>
                   <div class="text-center lg:text-left">
-                    <p class="font-heading text-xs font-bold uppercase tracking-widest text-text-secondary mb-2">Direct Mail</p>
+                    <p class="font-heading text-xs font-bold uppercase tracking-widest text-slate-600 mb-2">Direct Mail</p>
                     <a href="mailto:info@yhcqatar.com" class="font-heading block text-xl md:text-2xl font-bold text-navy hover:text-teal transition-colors mb-1">info@yhcqatar.com</a>
                     <a href="mailto:contact@yhcqatar.com" class="font-heading block text-xl md:text-2xl font-bold text-navy hover:text-lime transition-colors">contact@yhcqatar.com</a>
                   </div>
                 </div>
 
-                <!-- Divider -->
                 <div class="h-px w-full bg-gradient-to-r from-transparent via-border-subtle to-transparent"></div>
 
-                <!-- Address -->
                 <div class="flex flex-col lg:flex-row items-center lg:items-start gap-5">
                   <div class="w-14 h-14 rounded-2xl bg-lime-light flex items-center justify-center shrink-0 border border-lime/10 shadow-inner group transition-transform hover:scale-105">
                      <svg class="w-7 h-7 text-lime-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                   </div>
                   <div class="text-center lg:text-left">
-                    <p class="font-heading text-xs font-bold uppercase tracking-widest text-text-secondary mb-2">Office Headquarters</p>
+                    <p class="font-heading text-xs font-bold uppercase tracking-widest text-slate-600 mb-2">Office Headquarters</p>
                     <p class="font-heading text-xl md:text-2xl font-bold text-navy">Doha, Qatar</p>
                   </div>
                 </div>
               </div>
               
-              <!-- Action Button -->
               <div class="mt-12 text-center lg:text-left">
                  <a href="mailto:info@yhcqatar.com" class="btn-primary w-full shadow-glow text-lg py-4 inline-block text-center rounded-xl bg-gradient-to-r from-teal to-lime hover:opacity-90 transition-opacity">
-                    Reach Out Today <span class="ml-2">→</span>
+                   Reach Out Today <span class="ml-2">→</span>
                  </a>
               </div>
             </div>
@@ -364,16 +315,11 @@ import heroImage from "../assets/hero.png";
     </section>
   </main>
 
-  <!-- ════════════════════════════════════════════════════════════════════
-       SECTION 5 — CORPORATE FOOTER
-       ════════════════════════════════════════════════════════════════════ -->
   <footer class="bg-navy text-slate-300 border-t border-teal/20 pt-16 pb-8 relative overflow-hidden">
-    <!-- Background logo watermark -->
     <img src="/logo.png" alt="" class="absolute bottom-0 left-0 w-96 filter brightness-0 invert opacity-[0.03] transform -translate-x-1/4 translate-y-1/4" />
     
     <div class="max-w-7xl mx-auto px-4 relative z-10">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
-        <!-- Branding -->
         <div class="md:col-span-5">
           <div class="bg-white inline-block p-6 rounded-xl mb-6 shadow-glow">
             <img src="/logo.png" alt="Yusra Health Logo" class="h-20 lg:h-24 w-auto object-contain" />
@@ -384,7 +330,6 @@ import heroImage from "../assets/hero.png";
           </p>
         </div>
 
-        <!-- Links -->
         <div class="md:col-span-3">
           <h4 class="font-heading text-lg font-bold text-white mb-6">Navigation</h4>
           <ul class="space-y-4">
@@ -395,7 +340,6 @@ import heroImage from "../assets/hero.png";
           </ul>
         </div>
 
-        <!-- Contact Map -->
         <div class="md:col-span-4">
           <h4 class="font-heading text-lg font-bold text-white mb-6">Headquarters</h4>
           <address class="not-italic text-sm space-y-3 mb-6">
@@ -419,15 +363,12 @@ import heroImage from "../assets/hero.png";
       </div>
 
       <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-slate-500">
-        <p>&copy; 2026 Yusra Health Company LLC. All rights reserved.</p>
+        <p>© 2026 Yusra Health Company LLC. All rights reserved.</p>
         <p class="mt-2 md:mt-0">Doha, Qatar</p>
       </div>
     </div>
   </footer>
 
-  <!-- ════════════════════════════════════════════════════════════════════
-       SECTION 6 — STICKY MOBILE NAV (Glassmorphism)
-       ════════════════════════════════════════════════════════════════════ -->
   <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 glass-dark border-t border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.3)] touch-none">
     <div class="flex items-center justify-around px-2 py-3 pb-safe">
       <a href="tel:+97400000000" class="flex flex-col items-center gap-1 text-white hover:text-teal transition-colors p-2">
@@ -447,6 +388,5 @@ import heroImage from "../assets/hero.png";
     </div>
   </nav>
   
-  <!-- Content shim for mobile footer -->
   <div class="h-24 md:hidden" aria-hidden="true"></div>
 </Layout>
